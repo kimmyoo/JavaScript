@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<body onmouseover = "getXY(event)" onscroll = "return maliciousAd()">
+
+<h1>What Can JavaScript Do?</h1>
+
+
+
+
+<p id="demo">if you click the first button, this text will be changed!</p>
+<p id="clickToChange">if you click the second button, here will be changed!</p>
+
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Oh!'">
+Click 1!</button>
+</br>
+<button type="button" onclick=changeTextAndStyle()>
+Click 2!</button>
+</br>
+<img id="myImage" onclick="changeImage()" style = "left:600px; top:400px; position: absolute;" src="imgs/blink1.jpg" width="300" >
+</br>
+</br>
+
+<p>the following input field accepts a number that is >=1 and <= 10.</p> <br/>
+<input id = "inputField">
+<button type = "button" onclick = "validateInput()"> Submit</button>
+<p id = "valiRes"> </p>
+
+&nbsp &nbsp &nbsp &nbsp &nbsp <button type = "button" onclick = moveImage("up")> ↑ </button></br>
+<button type = "button" onclick = moveImage("left")> ← </button>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <button type = "button" onclick = moveImage("right")> → </button></br>
+&nbsp &nbsp &nbsp &nbsp &nbsp <button type = "button" onclick = moveImage("down")> ↓ </button></br>
+
+<p onclick="this.innerHTML='now it has gone'">Click me way...</p>
+<span onmouseover="this.style.color='red'" onmouseout = "this.style.color = 'black'">Mouse over me!</span>
+
+<p>decimal addition is not always accurate, eg. 0.1 + 0.2 should be 0.3 but in javascript it's not.</p>
+<p onclick = "this.innerHTML = 0.1 + 0.2"> click me to show result of 0.1+0.2 </p>
+<p>you can do this to avoid, (0.1*10 + 0.2*10)/10</p>
+
+<div id = "c1" style = "width: 50px; height = 20px; background-color:white" onmouseover = "rainbowColor(this)" onmouseout = "clearRainbow(this)">&nbsp</div>
+<div id = "c2" style = "width: 50px; height = 20px; background-color:white" onmouseover = "rainbowColor(this)" onmouseout = "clearRainbow(this)">&nbsp</div>
+<div id = "c3" style = "width: 50px; height = 20px; background-color:white" onmouseover = "rainbowColor(this)" onmouseout = "clearRainbow(this)">&nbsp</div>
+<div id = "c4" style = "width: 50px; height = 20px; background-color:white" onmouseover = "rainbowColor(this)" onmouseout = "clearRainbow(this)">&nbsp</div>
+<div id = "c5" style = "width: 50px; height = 20px; background-color:white" onmouseover = "rainbowColor(this)" onmouseout = "clearRainbow(this)">&nbsp</div>
+<div id = "c6" style = "width: 50px; height = 20px; background-color:white" onmouseover = "rainbowColor(this)" onmouseout = "clearRainbow(this)">&nbsp</div>
+<div id = "c7" style = "width: 50px; height = 20px; background-color:white" onmouseover = "rainbowColor(this)" onmouseout = "clearRainbow(this)">&nbsp</div>
+
+
+<p id = "getxy" onmouseover = "this.style.color = 'blue'">click, you will see the x and y coordinates of that click!</p>
+
+<span id = "clock"> </span>
+</br>
+
+<button type = "button" onclick = "moveWin()"> 点我</button>
+</br>
+
+<p>the following input field only takes numbers</p>
+<input id = "NaNExmple" onkeypress = "return isANum(event)"></input>
+</br>
+
+<p>please select your favorite fruit, click confirm after you finish your selection <button type = "button" onclick = "verifySelection()">confirm</button></p>
+<input type = "checkbox" name = "fav" value = "watermelon"/> Watermelon
+<input type = "checkbox" name = "fav" value = "cherry"/> Cherry
+<input type = "checkbox" name = "fav" value = "pomegranate"/> Pomegranate
+</br>
+
+<div id = "catwalk" style = "position: absolute">
+<img id = "cat" src = "imgs/cat1.gif" >
+</div>
+</br>
+
+<button id = "starcatwalk" onclick = "startCatWalk()">start catwalking</button>
+<button id = "stopcatwalk" onclick = "stopCatWalk()">Stop catwalking</button>
+<script src = "script.js"></script> <!-- keep javascript at the bottom will not slow down the loading of the page-->
+</body>
+</html>
