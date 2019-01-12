@@ -1,4 +1,3 @@
-
 var word = "bottles of beer";
 var count = 99;
 while (count > 0){
@@ -12,7 +11,20 @@ while (count > 0){
 }
 
 
+
+
+window.onload = init;
 setTimeout(wakeUpUser, 5000);
+
+
+
+
+
 function wakeUpUser(){
     alert ("wake up!");
+}
+
+function init(){
+    var para = document.getElementById("generic");
+    para.setAttribute("class", "redtext");
 }

@@ -42,3 +42,12 @@ while (!isSunk){
 var accuracy = 3/numOfGuess;
 var report = "you took " + numOfGuess + " shots to sink my battleship, and your accuracy is: " + accuracy;
 alert(report);
+
+
+function init (){
+    var genericBody = document.getElementById("generic body");
+    genericBody.innerHTML = "a special body";
+}
+
+//~ the code/function won't be executed until the windows is fully loaded
+window.onload = init;
